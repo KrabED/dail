@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Image Display with Black Background</title>
     <style>
+        body {
+            background-color: black;  /* Black background */
+            margin: 0;               /* Remove default margins */
+            padding: 0;              /* Remove default padding */
+            display: flex;           /* Center the image */
+            justify-content: center;  /* Horizontally center */
+            align-items: center;     /* Vertically center */
+            height: 100vh;           /* Full viewport height */
+        }
+        
         img {
-            max-width: 100%;  /* Ensures image doesn't exceed container width */
-            height: auto;     /* Maintains aspect ratio */
-            display: block;   /* Removes extra space below the image */
-            margin: 0 auto;   /* Centers the image (optional) */
+            max-width: 100%;         /* Image won't exceed screen width */
+            max-height: 100vh;       /* Image won't exceed screen height */
+            object-fit: contain;     /* Fit image without cropping */
         }
     </style>
 </head>
