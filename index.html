@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Display PNG Image</title>
+    <style>
+        img {
+            max-width: 100%;  /* Ensures image doesn't exceed container width */
+            height: auto;     /* Maintains aspect ratio */
+            display: block;   /* Removes extra space below the image */
+            margin: 0 auto;   /* Centers the image (optional) */
+        }
+    </style>
 </head>
 <body>
-    <h1>My PNG Image</h1>
     <img src="home.png" alt="">
-    
-    <!-- Optional: You can add width and height attributes -->
-    <!-- <img src="image.png" alt="Description" width="500" height="300"> -->
 </body>
 </html>
